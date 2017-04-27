@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/question_text_view"
@@ -12,7 +10,8 @@
         android:layout_marginBottom="16dp"
         android:background="@color/blue"
         android:padding="24dp"
-        android:textSize="16dp" />
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,28 +39,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal">
-
-<!--        <Button
-            android:id="@+id/last_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
-            android:background="@color/orange"
-            android:drawableLeft="@drawable/arrow_left"
-            android:padding="4dp"
-            android:text="@string/last_button" />-->
-
-<!--        <Button
-            android:id="@+id/next_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@color/orange"
-            android:drawableRight="@drawable/arrow_right"
-            android:padding="4dp"
-            android:text="@string/next_button" />-->
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|center_vertical">
 
         <ImageButton
             android:id="@+id/last_img_button"
@@ -71,7 +50,8 @@
             android:background="@color/orange"
             android:src="@drawable/arrow_left"
             android:padding="24dp"
-            android:layout_marginRight="16dp"/>
+            android:layout_marginRight="16dp"
+            android:layout_gravity="bottom|left"/>
 
         <ImageButton
             android:id="@+id/next_img_button"
@@ -80,9 +60,10 @@
             android:layout_marginTop="16dp"
             android:background="@color/orange"
             android:src="@drawable/arrow_right"
-            android:padding="24dp"/>
+            android:padding="24dp"
+            android:layout_gravity="bottom|right"/>
 
     </LinearLayout>
 
 
-</LinearLayout>
+</FrameLayout>

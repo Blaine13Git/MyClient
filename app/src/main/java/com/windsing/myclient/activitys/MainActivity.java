@@ -1,12 +1,14 @@
-package com.windsing.myclient;
+package com.windsing.myclient.activitys;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Window;
 
 import com.ashokvarma.bottomnavigation.BadgeItem;
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
+import com.windsing.myclient.R;
 import com.windsing.myclient.fragments.FragmentOne;
 import com.windsing.myclient.fragments.FragmentTwo;
 
@@ -18,6 +20,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // 在 setContentView 之前请求窗口特性
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        //加载视图
         setContentView(R.layout.activity_main);
 
         mBottomNavigationBar = (BottomNavigationBar) findViewById(R.id.bottom_navigation_bar);

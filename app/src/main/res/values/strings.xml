@@ -1,8 +1,26 @@
 <resources>
     <string name="app_name">MyClient</string>
-    <!--<string name="app_name">BottomNavigationBar</string>-->
+
     <string name="tab_one">Fish</string>
     <string name="tab_two">Fly</string>
     <string name="tab_three">Bird</string>
     <string name="tab_four">Coffee</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="true_button">TRUE</string>
+    <string name="false_button">FALSE</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect!</string>
+
+    <string name="next_button">NEXT</string>
+    <string name="last_button">LAST</string>
+
+    <!--新增问题字符串-->
+    <string name="question_oceans">1、The Pacific Ocean is larger than the Atlantic Ocean.</string>
+    <string name="question_mideast">2、The Suez Canal connects the Red Sea and the Indian Ocean.</string>
+    <string name="question_africa">3、The source of the Nile River is in Egypt.</string>
+    <string name="question_americas">4、The Amazon River is the longest river in the Americas.</string>
+    <string name="question_asia">5、Lake Baikal is the world\'s oldest and deepest freshwater lake.</string>
+
 </resources>
