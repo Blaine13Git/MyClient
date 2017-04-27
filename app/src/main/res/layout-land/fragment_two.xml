@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    android:scrollbars="vertical">
 
     <TextView
         android:id="@+id/question_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"
         android:background="@color/blue"
         android:padding="24dp"
-        android:textSize="16dp"
-        android:layout_gravity="center_horizontal"/>
+        android:textSize="16dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -25,45 +27,44 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
             android:background="@color/green"
-            android:text="@string/true_button" />
+            android:text="@string/true_button"/>
 
         <Button
             android:id="@+id/false_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/red"
-            android:text="@string/false_button" />
+            android:text="@string/false_button"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal|center_vertical">
+        android:orientation="horizontal" >
 
         <ImageButton
             android:id="@+id/last_img_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginRight="16dp"
             android:layout_marginTop="16dp"
             android:background="@color/orange"
-            android:src="@drawable/arrow_left"
             android:padding="24dp"
-            android:layout_marginRight="16dp"
-            android:layout_gravity="bottom|left"/>
+            android:src="@drawable/arrow_left"/>
 
         <ImageButton
             android:id="@+id/next_img_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
             android:layout_marginTop="16dp"
             android:background="@color/orange"
-            android:src="@drawable/arrow_right"
             android:padding="24dp"
-            android:layout_gravity="bottom|right"/>
+            android:src="@drawable/arrow_right"/>
 
     </LinearLayout>
-
 
 </FrameLayout>
